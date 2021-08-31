@@ -22,6 +22,7 @@ class App extends Component {
     this.setState({ account: accounts[0] })
 
     const networkId = await web3.eth.net.getId()
+    console.log(networkId)
 
     // Load DaiToken
     const daiTokenData = DaiToken.networks[networkId]
